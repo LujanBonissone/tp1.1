@@ -1,0 +1,32 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+   
+    "name": "Matias Alderete",
+    "age": 21,
+    "email": "matialderete22@gmail.com",
+    "password":"matias_3532"
+}
+
+//ver todos
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+//ver uno en especifico
+###
+GET http://localhost:9000/api/users/662f9aabe261d8b058e319bc HTTP/1.1
+
+//cambiar un dato
+###
+PUT http://localhost:9000/api/users/662f9b027c7e6641e05ed781 HTTP/1.1
+Content-Type: application/json
+
+{
+    "password": "mati_2198"
+}
+
+//eliminar uno
+###
+DELETE http://localhost:9000/api/users/662f9beb9c7c3b59913c0b01 HTTP/1.1
